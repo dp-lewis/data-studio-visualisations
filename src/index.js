@@ -9,17 +9,24 @@ function createItem(title) {
   return element;
 }
 
+function cleanUpOldVis(name) {
+  const oldVis = document.querySelector(`#${name}`);
+  if (oldVis) {
+    oldVis.parentNode.removeChild(oldVis);
+  }  
+}
+
 function drawVis(data) {
   console.log('Data', data);
   const NAME = 'bigtext'; 
-
-  if (document.querySelector("#bigtext")) {
-    const oldtext = document.querySelector(`#${NAME}`)
-    oldtext.parentNode.removeChild(oldtext);
-  }  
   const rootElement = document.createElement("div");
-  const title = data.tables.DEFAULT && data.tables.DEFAULT[0] ? data.tables.DEFAULT[0].barDimension : 'Not available';
-  const newDiv = createItem(title); 
+  rootElement.id = NAME;
+
+  cleanUpOldVis(NAME);
+
+  data.tables.DEFAULT.forEach((row) => {
+    rootElement.appendChild(createItem(row.barDimension)); 
+  });
 
   // prep the colour etc. on the root element
   const fontColor =  data.style.fontColor.value
@@ -42,9 +49,7 @@ function drawVis(data) {
   rootElement.style.fontFamily = fontFam;
   rootElement.style.fontSize = size;
   rootElement.style.lineHeight = lineHeight;
-
-  rootElement.id = NAME;
-  rootElement.appendChild(newDiv);  
+  
   document.body.appendChild(rootElement);
 }
 
