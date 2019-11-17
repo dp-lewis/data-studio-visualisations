@@ -3,9 +3,11 @@ import {
   objectTransform
 } from '@google/dscc'
 
-function createItem(title) {
+function createItem(title, marginBottom) {
+  marginBottom = marginBottom || 10;
   const element = document.createElement("div");
   element.appendChild(document.createTextNode(title));
+  element.style.marginBottom = marginBottom + 'px';
   return element;
 }
 
@@ -24,8 +26,12 @@ function drawVis(data) {
 
   cleanUpOldVis(NAME);
 
+  const marginBottom =  data.style.marginBottom.value
+  ? data.style.marginBottom.value
+  : data.style.marginBottom.defaultValue;
+
   data.tables.DEFAULT.forEach((row) => {
-    rootElement.appendChild(createItem(row.barDimension)); 
+    rootElement.appendChild(createItem(row.barDimension, marginBottom)); 
   });
 
   // prep the colour etc. on the root element

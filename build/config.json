@@ -53,6 +53,12 @@
             "id": "lineHeight",
             "label": "Line Height",
             "defaultValue": "1.33"
+          },
+          {
+            "type": "TEXTINPUT",
+            "id": "marginBottom",
+            "label": "Space Between",
+            "defaultValue": "10"
           }
         ]
       }
