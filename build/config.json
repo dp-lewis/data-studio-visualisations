@@ -1,57 +1,67 @@
+  
 {
-    "data": [
-      {
-        "id": "Dimension",
-        "label": "Dimension",
-        "elements": [
-          {
-            "id": "textDimension",
-            "label": "Dimension",
-            "type": "DIMENSION",
-            "options": {
-              "min": 1,
-              "max": 1
-            }
+  "data": [
+    {
+      "id": "concepts",
+      "label": "Concepts",
+      "elements": [
+        {
+          "id": "textDimension",
+          "label": "Dimension",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
           }
-        ]
-      }
-    ],
-    "style": [
-      {
-        "id": "font",
-        "label": "Font",
-        "elements": [
-          {
-            "type": "FONT_COLOR",
-            "id": "fontColor",
-            "label": "Color",
-            "defaultValue": "black"
-          },
-          {
-            "type": "FONT_FAMILY",
-            "id": "fontFam",
-            "label": "Family",
-            "defaultValue": "auto"
-          },
-          {
-            "type": "FONT_SIZE",
-            "id": "fontSize",
-            "label": "Size",
-            "defaultValue": "10px"
-          },
-          {
-            "type": "TEXTINPUT",
-            "id": "lineHeight",
-            "label": "Line Height",
-            "defaultValue": "1.33"
-          },
-          {
-            "type": "TEXTINPUT",
-            "id": "marginBottom",
-            "label": "Space Between",
-            "defaultValue": "10"
+        },
+        {
+          "id": "textMetric",
+          "label": "Metric",
+          "type": "METRIC",
+          "options": {
+            "min": 1,
+            "max": 1
           }
-        ]
-      }
-    ]
-  }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "font",
+      "label": "Font",
+      "elements": [
+        {
+          "type": "FONT_COLOR",
+          "id": "fontColor",
+          "label": "Color",
+          "defaultValue": "black"
+        },
+        {
+          "type": "FONT_FAMILY",
+          "id": "fontFam",
+          "label": "Family",
+          "defaultValue": "auto"
+        },
+        {
+          "type": "FONT_SIZE",
+          "id": "fontSize",
+          "label": "Size",
+          "defaultValue": "10px"
+        },
+        {
+          "type": "TEXTINPUT",
+          "id": "lineHeight",
+          "label": "Line Height",
+          "defaultValue": "1.33"
+        },
+        {
+          "type": "TEXTINPUT",
+          "id": "marginBottom",
+          "label": "Space Between",
+          "defaultValue": "10"
+        }
+      ]
+    }
+  ]
+}
