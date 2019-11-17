@@ -14,9 +14,9 @@
       "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
       "description": "Large text with configurable line-height",
       "resource": {
-        "js": "gs://dl-agile-visualisations/main.js",
-        "config": "gs://dl-agile-visualisations/config.json",
-        "css": "gs://dl-agile-visualisations/style.css"
+        "js": "gs://dl-agile-visualisations-staging/main.js",
+        "config": "gs://dl-agile-visualisations-staging/config.json",
+        "css": "gs://dl-agile-visualisations-staging/style.css"
       }
     }
   ]
