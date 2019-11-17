@@ -1,22 +1,19 @@
 {
-    "name": "DL Agile Visualisations",
-    "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
-    "organization": "David Lewis",
-    "supportUrl": "https://url",
-    "packageUrl": "https://url",
-    "privacyPolicyUrl": "https://url",
-    "description": "Collection of visualisations that are useful for Agile teams",
-    "devMode": true,
-    "components": [{
-      "id": "bigText",
-      "name": "Big Text",
-      "iconUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
-      "description": "Large text with configurable line-height",
+  "name": "DL Agile Visualisations",
+  "logoUrl": "https://raw.githubusercontent.com/googledatastudio/community-visualizations/master/docs/codelab/img/bar_chart.png",
+  "organization": "David Lewis",
+  "supportUrl": "https://url",
+  "packageUrl": "https://url",
+  "privacyPolicyUrl": "https://url",
+  "description": "Collection of visualisations that are useful for Agile teams",
+  "devMode": true,
+  "components": [
+    {
       "resource": {
-        "js": "gs://dl-agile-visualisations/main.js",
-        "config": "gs://dl-agile-visualisations/config.json",
-        "css": "gs://dl-agile-visualisations/style.css"
+        "js": "gs://dl-agile-visualisations-staging/main.js",
+        "config": "gs://dl-agile-visualisations-staging/config.json",
+        "css": "gs://dl-agile-visualisations-staging/style.css"
       }
-    }]
-  }
-  
+    }
+  ]
+}

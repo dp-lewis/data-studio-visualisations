@@ -4,7 +4,8 @@
   "description": "",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "create:manifest": "node ./src/createmanifest.js",
+    "build": "npm run create:manifest; webpack",
     "deploy": "npm run build; gsutil cp -a public-read ./build/* gs://dl-agile-visualisations"
   },
   "repository": {

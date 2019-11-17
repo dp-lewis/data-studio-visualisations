@@ -1,0 +1,11 @@
+{
+    "devMode": true,
+    "components": [{
+      "resource": {
+        "js": "gs://dl-agile-visualisations/main.js",
+        "config": "gs://dl-agile-visualisations/config.json",
+        "css": "gs://dl-agile-visualisations/style.css"
+      }
+    }]
+  }
+  
