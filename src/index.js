@@ -31,7 +31,7 @@ function drawVis(data) {
   : data.style.marginBottom.defaultValue;
 
   data.tables.DEFAULT.forEach((row) => {
-    rootElement.appendChild(createItem(row.barDimension, marginBottom)); 
+    rootElement.appendChild(createItem(row.textDimension, marginBottom)); 
   });
 
   // prep the colour etc. on the root element
