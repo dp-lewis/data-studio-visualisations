@@ -1,0 +1,28 @@
+{
+  "name": "data-studio-visualisations",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "deploy": "npm run build; gsutil cp -a public-read ./build/* gs://dl-agile-visualisations"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dp-lewis/data-studio-visualisations.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dp-lewis/data-studio-visualisations/issues"
+  },
+  "homepage": "https://github.com/dp-lewis/data-studio-visualisations#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@google/dscc": "^0.3.12"
+  }
+}

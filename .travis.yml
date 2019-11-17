@@ -1,0 +1,17 @@
+sudo: false
+language: node_js
+node_js:
+  - node
+script: npm run build
+deploy:
+  skip_cleanup: true
+  provider: gcs
+  edge:
+    branch: master
+  access_key_id: $GCS_ACCESS_KEY_ID
+  secret_access_key: $GCS_SECRET_ACCESS_KEY
+  bucket: dl-agile-visualisations
+  local-dir: build
+  acl: public-read
+  on:
+    repo: dp-lewis/data-studio-visualisations
