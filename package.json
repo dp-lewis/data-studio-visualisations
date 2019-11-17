@@ -24,6 +24,7 @@
     "webpack-cli": "^3.3.10"
   },
   "dependencies": {
-    "@google/dscc": "^0.3.12"
+    "@google/dscc": "^0.3.12",
+    "lodash": "^4.17.15"
   }
 }
