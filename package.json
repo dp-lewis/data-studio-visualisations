@@ -21,7 +21,7 @@
   "homepage": "https://github.com/dp-lewis/data-studio-visualisations#readme",
   "devDependencies": {
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@google/dscc": "^0.3.12",
